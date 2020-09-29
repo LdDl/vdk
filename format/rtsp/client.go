@@ -69,6 +69,7 @@ type Client struct {
 	streamsintf []av.CodecData
 	session     string
 	body        io.Reader
+	gpsupport   bool //indicates if Client supports get_parameter method
 }
 
 type Request struct {
@@ -197,8 +198,11 @@ func (self *Client) SendRtpKeepalive() (err error) {
 				fmt.Println("rtp: keep alive")
 			}
 			req := Request{
-				Method: "OPTIONS",
+				Method: "GET_PARAMETER",
 				Uri:    self.requestUri,
+			}
+			if !self.gpsupport {
+				req.Method = "OPTIONS"
 			}
 			if self.session != "" {
 				req.Header = append(req.Header, "Session: "+self.session)
@@ -714,9 +718,12 @@ func (self *Client) Options() (err error) {
 	if err = self.WriteRequest(req); err != nil {
 		return
 	}
-	if _, err = self.ReadResponse(); err != nil {
+	var resp Response
+	if resp, err = self.ReadResponse(); err != nil {
 		return
 	}
+	methods := resp.Headers["Public"][0]
+	self.gpsupport = strings.Contains(methods, "GET_PARAMETER")
 	self.stage = stageOptionsDone
 	return
 }
