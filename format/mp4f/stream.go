@@ -3,10 +3,10 @@ package mp4f
 import (
 	"time"
 
-	"github.com/deepch/vdk/av"
-	"github.com/deepch/vdk/format/mp4"
-	"github.com/deepch/vdk/format/mp4/mp4io"
-	"github.com/deepch/vdk/format/mp4f/mp4fio"
+	"github.com/morozka/vdk/av"
+	"github.com/morozka/vdk/format/mp4"
+	"github.com/morozka/vdk/format/mp4/mp4io"
+	"github.com/morozka/vdk/format/mp4f/mp4fio"
 )
 
 type Stream struct {

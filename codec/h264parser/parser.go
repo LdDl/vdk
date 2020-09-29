@@ -4,9 +4,9 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/deepch/vdk/av"
-	"github.com/deepch/vdk/utils/bits"
-	"github.com/deepch/vdk/utils/bits/pio"
+	"github.com/morozka/vdk/av"
+	"github.com/morozka/vdk/utils/bits"
+	"github.com/morozka/vdk/utils/bits/pio"
 )
 
 const (
