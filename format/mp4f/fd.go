@@ -1,6 +1,6 @@
 package mp4f
 
-import "github.com/morozka/vdk/format/mp4/mp4io"
+import "github.com/LdDl/vdk/format/mp4/mp4io"
 
 type FDummy struct {
 	Data []byte

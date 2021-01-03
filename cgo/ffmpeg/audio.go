@@ -17,9 +17,9 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/morozka/vdk/av"
-	"github.com/morozka/vdk/av/avutil"
-	"github.com/morozka/vdk/codec/aacparser"
+	"github.com/LdDl/vdk/av"
+	"github.com/LdDl/vdk/av/avutil"
+	"github.com/LdDl/vdk/codec/aacparser"
 )
 
 const debug = false

@@ -17,13 +17,13 @@ import (
 	"strings"
 	"time"
 
-	"github.com/morozka/vdk/av"
-	"github.com/morozka/vdk/av/avutil"
-	"github.com/morozka/vdk/codec"
-	"github.com/morozka/vdk/codec/aacparser"
-	"github.com/morozka/vdk/codec/h264parser"
-	"github.com/morozka/vdk/format/rtsp/sdp"
-	"github.com/morozka/vdk/utils/bits/pio"
+	"github.com/LdDl/vdk/av"
+	"github.com/LdDl/vdk/av/avutil"
+	"github.com/LdDl/vdk/codec"
+	"github.com/LdDl/vdk/codec/aacparser"
+	"github.com/LdDl/vdk/codec/h264parser"
+	"github.com/LdDl/vdk/format/rtsp/sdp"
+	"github.com/LdDl/vdk/utils/bits/pio"
 )
 
 var ErrCodecDataChange = fmt.Errorf("rtsp: codec data change, please call HandleCodecDataChange()")

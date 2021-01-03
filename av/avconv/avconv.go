@@ -5,10 +5,10 @@ import (
 	"io"
 	"time"
 
-	"github.com/morozka/vdk/av"
-	"github.com/morozka/vdk/av/avutil"
-	"github.com/morozka/vdk/av/pktque"
-	"github.com/morozka/vdk/av/transcode"
+	"github.com/LdDl/vdk/av"
+	"github.com/LdDl/vdk/av/avutil"
+	"github.com/LdDl/vdk/av/pktque"
+	"github.com/LdDl/vdk/av/transcode"
 )
 
 var Debug bool

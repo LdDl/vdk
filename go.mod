@@ -1,4 +1,4 @@
-module github.com/morozka/vdk
+module github.com/LdDl/vdk
 
 go 1.14
 

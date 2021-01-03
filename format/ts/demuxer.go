@@ -6,11 +6,11 @@ import (
 	"io"
 	"time"
 
-	"github.com/morozka/vdk/av"
-	"github.com/morozka/vdk/codec/aacparser"
-	"github.com/morozka/vdk/codec/h264parser"
-	"github.com/morozka/vdk/format/ts/tsio"
-	"github.com/morozka/vdk/utils/bits/pio"
+	"github.com/LdDl/vdk/av"
+	"github.com/LdDl/vdk/codec/aacparser"
+	"github.com/LdDl/vdk/codec/h264parser"
+	"github.com/LdDl/vdk/format/ts/tsio"
+	"github.com/LdDl/vdk/utils/bits/pio"
 )
 
 type Demuxer struct {

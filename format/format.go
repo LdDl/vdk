@@ -1,13 +1,13 @@
 package format
 
 import (
-	"github.com/morozka/vdk/av/avutil"
-	"github.com/morozka/vdk/format/aac"
-	"github.com/morozka/vdk/format/flv"
-	"github.com/morozka/vdk/format/mp4"
-	"github.com/morozka/vdk/format/rtmp"
-	"github.com/morozka/vdk/format/rtsp"
-	"github.com/morozka/vdk/format/ts"
+	"github.com/LdDl/vdk/av/avutil"
+	"github.com/LdDl/vdk/format/aac"
+	"github.com/LdDl/vdk/format/flv"
+	"github.com/LdDl/vdk/format/mp4"
+	"github.com/LdDl/vdk/format/rtmp"
+	"github.com/LdDl/vdk/format/rtsp"
+	"github.com/LdDl/vdk/format/ts"
 )
 
 func RegisterAll() {

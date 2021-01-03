@@ -6,7 +6,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/morozka/vdk/utils/bits/pio"
+	"github.com/LdDl/vdk/utils/bits/pio"
 )
 
 type AMF0ParseError struct {

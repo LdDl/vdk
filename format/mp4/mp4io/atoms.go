@@ -1,7 +1,10 @@
 package mp4io
 
-import "github.com/morozka/vdk/utils/bits/pio"
-import "time"
+import (
+	"time"
+
+	"github.com/LdDl/vdk/utils/bits/pio"
+)
 
 const MOOF = Tag(0x6d6f6f66)
 

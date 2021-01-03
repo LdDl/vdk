@@ -5,8 +5,8 @@ import (
 	"io"
 	"time"
 
-	"github.com/morozka/vdk/av"
-	"github.com/morozka/vdk/utils/bits/pio"
+	"github.com/LdDl/vdk/av"
+	"github.com/LdDl/vdk/utils/bits/pio"
 )
 
 func TsToTime(ts int32) time.Duration {

@@ -6,10 +6,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/morozka/vdk/av"
-	"github.com/morozka/vdk/codec/aacparser"
-	"github.com/morozka/vdk/codec/h264parser"
-	"github.com/morozka/vdk/format/ts/tsio"
+	"github.com/LdDl/vdk/av"
+	"github.com/LdDl/vdk/codec/aacparser"
+	"github.com/LdDl/vdk/codec/h264parser"
+	"github.com/LdDl/vdk/format/ts/tsio"
 )
 
 var CodecTypes = []av.CodecType{av.H264, av.AAC}

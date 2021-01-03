@@ -1,7 +1,7 @@
 package pktque
 
 import (
-	"github.com/morozka/vdk/av"
+	"github.com/LdDl/vdk/av"
 )
 
 type Buf struct {

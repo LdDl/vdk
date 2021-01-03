@@ -4,7 +4,7 @@ package pktque
 import (
 	"time"
 
-	"github.com/morozka/vdk/av"
+	"github.com/LdDl/vdk/av"
 )
 
 type Filter interface {
