@@ -722,7 +722,11 @@ func (self *Client) Options() (err error) {
 	if resp, err = self.ReadResponse(); err != nil {
 		return
 	}
-	methods := resp.Headers["Public"][0]
+	publicHeader, ok := resp.Headers["Public"]
+	if !ok {
+		return fmt.Errorf("No header Public")
+	}
+	methods := publicHeader[0]
 	self.gpsupport = strings.Contains(methods, "GET_PARAMETER")
 	self.stage = stageOptionsDone
 	return
